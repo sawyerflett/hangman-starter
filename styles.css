@@ -1,1 +1,9 @@
 /* Add CSS styles for your web site here and use them in index.html. */
+h1 {
+    text-align: center;
+}
+center {
+    text-align: center;
+    /* align-items: center; */
+    scale: 1.4;
+}

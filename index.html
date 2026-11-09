@@ -1,36 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>repl.it</title>
-    <link href="styles.css" rel="stylesheet" type="text/css" />
-  </head>
- <body>
 
-<h1>HANGMAN</h1>
+<head>
+  <title>Hangman</title>
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
 
-<!-- select box for difficulty? -->
+<body onload="startGame(2)">
 
-<button id="start">Start New Game</button>
+  <h1>HANGMAN</h1>
 
-<!-- try the more advanced button system from classroom instead of this! -->
-<select id="guessedLetter">
-  <option value="a">a</option>
-  <option value="b">b</option>
-  <!-- ..... -->
-</select>
+  <!-- select box for difficulty? -->
 
-<button id="guessLetter">Guess Letter</button>
+  <button id="start">Start New Game</button>
 
-<h3>Guessed Letters</h3>
+  <!-- try the more advanced button system from classroom instead of this! -->
+  <select id="mode">
+    <option value="1">Scrabble</option>
+    <option value="2">10000 Common</option>
+    <option value="3">Places</option>
+    <!-- ..... -->
+  </select>
 
-<div id="guessedLetters"></div>
+  <button id="guessLetter">Guess Letter</button>
 
-<h4>Guesses Remaining...</h4>
-<div id="numGuesses"></div>
 
-<div id="word"></div>
+  <h3>Guessed Letters</h3>
 
-<script src="script.js"></script>
+  <div id="guessedLetters"></div>
+
+  <h4>Guesses Remaining...</h4>
+  <div id="numGuesses"></div>
+
+  <h1>Word
+
+    <div id="word"></div>
+
+  </h1>
+
+  <center>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div id="buttonList0"></div>
+    <div id="buttonList1"></div>
+    <div id="buttonList2"></div>
+
+  </center>
+
+  <script src="dictionary.js"></script>
+  <script src="places.js"></script>
+  <script src="common.js"></script>
+
+  <script src="script.js"></script>
 
 </body>
+
 </html>
